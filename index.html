@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en " data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/66383ed08b.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./Images/logo.png" type="image/x-icon">
+
+    <style>
+        * {
+            font-family: Lato;
+        }
+    </style>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+
+                }
+            }
+        }
+    </script>
+
+    <title>FruityLicious</title>
+</head>
+
+<body class=" w-[90%] sm:w-3/4 mx-auto">
+    <header>
+        <section>
+            <div class="navbar justify-between bg-[#00BCD4] mt-10 rounded-full text-white px-10 py-5">
+                <div class="navbar-start hidden xl:block ">
+                    <ul class="flex gap-4">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Shop</a></li>
+                        <li><a href="">All Fruits</a></li>
+                    </ul>
+
+                </div>
+                <div class="navbar-center">
+                    <a class="flex items-center gap-3 text-xl font-semibold" href=""><img class="w-10"
+                            src="./Images/logo.png" alt="">FruityLicious</a>
+                </div>
+                <div class="navbar-end space-x-4 ">
+                    <div class="search hidden lg:flex items-center py-3 px-6 rounded-full bg-white text-black min-w-[300px]">
+                    <input type="text" placeholder="Search here"
+                        class="w-full outline-none" />
+                        <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>                    
+                    
+                    </div>
+                    <div class="dropdown dropdown-end xl:hidden">
+                        <label tabindex="0" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h7" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow text-black bg-base-100  w-52">
+                            <li><a href="">Home</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Shop</a></li>
+                        <li><a href="">All Fruits</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <section>
+
+    </section>
+
+</body>
+
+</html>
