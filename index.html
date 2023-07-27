@@ -41,11 +41,11 @@
 
 
 
-<body class=" w-[90%] md:w-3/4 mx-auto">
+<body>
 
     <!-- Header Section -->
 
-    <header>
+    <header class=" w-[90%] md:w-3/4 mx-auto">
         <!-- This is navbar section -->
         <section>
             <div class="navbar justify-between md:bg-primary md:my-10 rounded-full md:text-white md:px-10 py-5">
@@ -60,7 +60,9 @@
                 </div>
                 <div class="navbar-center">
                     <a class="flex items-center gap-3 text-xl font-semibold" href=""><img class="w-10"
-                            src="./Images/logo.png" alt="">FruityLicious</a>
+                            src="./Images/logo.png" alt="">
+                        <p><span class="text-primary md:text-white">Fruity</span>Licious</p>
+                    </a>
                 </div>
                 <div class="navbar-end space-x-4 ">
                     <div class="hidden lg:flex items-center py-3 px-6 rounded-full bg-white text-black min-w-[300px]">
@@ -87,7 +89,7 @@
                                 <li><a href="">Shop</a></li>
                                 <li><a href="">All Fruits</a></li>
                                 <div
-                                    class="flex lg:hidden items-center py-3 px-6 rounded-full bg-white text-black min-w-[300px]">
+                                    class="flex lg:hidden mt-4 items-center py-3 px-6 rounded-full bg-white text-black min-w-[300px]">
                                     <input type="text" placeholder="Search here" class="w-full outline-none" />
                                     <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
 
@@ -102,17 +104,17 @@
 
 
     <!-- Main section -->
-    <main>
+    <main class=" w-[90%] md:w-3/4 mx-auto">
 
         <!-- Banner Section -->
         <section class="banner relative">
-            <div class="carousel w-full h-[450px]">
+            <div class="carousel w-full h-[250px] lg:h-[450px] rounded-lg">
                 <div id="slide1" class="carousel-item relative w-full ">
                     <div class="hero " style="background-image: url(./Images/banner1.png);">
                         <div class="hero-overlay bg-gradient-to-b from-black to-white opacity-40"></div>
                         <div class="hero-content text-center text-neutral-content text-white ">
-                            <div class="max-w-lg">
-                                <h1 class="mb-5 text-5xl font-bold ">Fruitylicious Harvests</h1>
+                            <div class=" max-w-lg ">
+                                <h1 class="mb-5 text-3xl md:text-5xl font-bold ">Fruitylicious Harvests</h1>
                                 <p class="mb-5">Taste the Colors of Nature! lorem*20</p>
                                 <button class="btn btn-primary bg-primary border-0 hover:bg-red-400">Shop Now</button>
                             </div>
@@ -328,19 +330,359 @@
                 </div>
 
             </div>
-            <button class="btn btn-primary w-max bg-primary border-0 hover:bg-red-400">Shop Now</button>
+            <button class="btn btn-primary w-max bg-primary border-0 hover:bg-red-400">Shop All</button>
 
+        </section>
+
+
+        <!-- Here are All modals -->
+
+        <!-- Modal 1 -->
+
+        <dialog id="modal1" class="modal">
+            <form method="dialog" class="modal-box flex flex-col items-center gap-6">
+
+                <figure class="px-10 pt-10">
+                    <img src="./Images/fruit6.png" alt="" class="rounded-xl" />
+                </figure>
+                <div class="flex flex-col  items-center text-center gap-4">
+                    <h2 class="card-title">Apple</h2>
+                    <table class="table border">
+                        <tbody class="border">
+                            <tr>
+                                <th class="bg-base-200">Origin</th>
+                                <td>GreenLand</td>
+                            </tr>
+                            <tr>
+                                <th class="bg-base-200">Unit</th>
+                                <td>KG</td>
+                            </tr>
+                            <tr>
+                                <th class="bg-base-200">Price</th>
+                                <td>$12.50</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="space-x-4">
+                    <button class="btn bg-whit border-primary text-primary">Close</button> <button
+                        class="btn btn-primary bg-primary border-0 hover:bg-red-400">Buy Now</button>
+
+                </div>
+            </form>
+        </dialog>
+
+
+        <!-- Modal 2 -->
+
+        <dialog id="modal2" class="modal">
+            <form method="dialog" class="modal-box flex flex-col items-center gap-6">
+
+                <figure class="px-10 pt-10">
+                    <img src="./Images/fruit7.png" alt="" class="rounded-xl" />
+                </figure>
+                <div class="flex flex-col  items-center text-center gap-4">
+                    <h2 class="card-title">Orange</h2>
+                    <table class="table border">
+                        <tbody class="border">
+                            <tr>
+                                <th class="bg-base-200">Origin</th>
+                                <td>China</td>
+                            </tr>
+                            <tr>
+                                <th class="bg-base-200">Unit</th>
+                                <td>Dozen</td>
+                            </tr>
+                            <tr>
+                                <th class="bg-base-200">Price</th>
+                                <td>$12.50</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="space-x-4">
+                    <button class="btn bg-whit border-primary text-primary">Close</button> <button
+                        class="btn btn-primary bg-primary border-0 hover:bg-red-400">Buy Now</button>
+
+                </div>
+            </form>
+        </dialog>
+
+
+        <!-- Modal 3 -->
+
+        <dialog id="modal3" class="modal">
+            <form method="dialog" class="modal-box flex flex-col items-center gap-6">
+
+                <figure class="px-10 pt-10">
+                    <img src="./Images/fruit8.png" alt="" class="rounded-xl" />
+                </figure>
+                <div class="flex flex-col  items-center text-center gap-4">
+                    <h2 class="card-title">Red Dragon</h2>
+                    <table class="table border">
+                        <tbody class="border">
+                            <tr>
+                                <th class="bg-base-200">Origin</th>
+                                <td>Vietnam</td>
+                            </tr>
+                            <tr>
+                                <th class="bg-base-200">Unit</th>
+                                <td>KG</td>
+                            </tr>
+                            <tr>
+                                <th class="bg-base-200">Price</th>
+                                <td>$15.50</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="space-x-4">
+                    <button class="btn bg-whit border-primary text-primary">Close</button> <button
+                        class="btn btn-primary bg-primary border-0 hover:bg-red-400">Buy Now</button>
+
+                </div>
+            </form>
+        </dialog>
+
+
+        <!-- Modal 4 -->
+
+        <dialog id="modal4" class="modal">
+            <form method="dialog" class="modal-box flex flex-col items-center gap-6">
+
+                <figure class="px-10 pt-10">
+                    <img src="./Images/fruit9.png" alt="" class="rounded-xl" />
+                </figure>
+                <div class="flex flex-col  items-center text-center gap-4">
+                    <h2 class="card-title">Banana</h2>
+                    <table class="table border">
+                        <tbody class="border">
+                            <tr>
+                                <th class="bg-base-200">Origin</th>
+                                <td>Bangladesh</td>
+                            </tr>
+                            <tr>
+                                <th class="bg-base-200">Unit</th>
+                                <td>Pcs</td>
+                            </tr>
+                            <tr>
+                                <th class="bg-base-200">Price</th>
+                                <td>$5</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="space-x-4">
+                    <button class="btn bg-whit border-primary text-primary">Close</button> <button
+                        class="btn btn-primary bg-primary border-0 hover:bg-red-400">Buy Now</button>
+
+                </div>
+            </form>
+        </dialog>
+
+
+
+
+        <!-- Expert Section -->
+        <section>
+            <div class="hero  w-full h-min-[450px] rounded-lg" style="background-image: url(./Images/team.png);">
+                <div class="hero-overlay rounded-lg bg-opacity-60"></div>
+                <div class="hero-content p-10 text-center text-white text-neutral-content flex-col w-full">
+                    <div class="max-w-lg ">
+                        <h1 class="mb-5 text-5xl font-extrabold">Meet Our Team</h1>
+                        <p class="mb-5">At Fruitylicious Harvests, our team is a group of dedicated fruit enthusiasts
+                            committed to delivering the freshest and most flavorful produce to your table.</p>
+                    </div>
+
+                    <!-- members section -->
+                    <div class="w-3/4 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-x-6 gap-y-10">
+                        <!-- Member 1 -->
+                        <div class="flex flex-col w-full items-center gap-3">
+                            <img src="./Images/member1.png" alt="" class="w-3/4" />
+                            <div class="items-center text-center space-y-2">
+                                <h2 class="text-xl font-bold ">Awlad Hossain</h2>
+                                <p>Fruit Expert</p>
+                                <div class="review space-x-2">
+                                    <i class="fa-brands fa-facebook" style="color: #00bcd4;"></i>
+                                    <i class="fa-brands fa-twitter" style="color: #00bcd4;"></i>
+                                    <i class="fa-brands fa-instagram" style="color: #00bcd4;"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Member 2 -->
+                        <div class="flex flex-col w-full items-center gap-3">
+                            <img src="./Images/member3.png" alt="" class="w-3/4" />
+                            <div class="items-center text-center space-y-2">
+                                <h2 class="text-xl font-bold ">Arman Fakir</h2>
+                                <p>Fruit Expert</p>
+                                <div class="review space-x-2">
+                                    <i class="fa-brands fa-facebook" style="color: #00bcd4;"></i>
+                                    <i class="fa-brands fa-twitter" style="color: #00bcd4;"></i>
+                                    <i class="fa-brands fa-instagram" style="color: #00bcd4;"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Member 3 -->
+                        <div class="flex flex-col w-full items-center gap-3">
+                            <img src="./Images/member1.png" alt="" class="w-3/4" />
+                            <div class="items-center text-center space-y-2">
+                                <h2 class="text-xl font-bold ">Shahinur Ahmed</h2>
+                                <p>Fruit Expert</p>
+                                <div class="review space-x-2">
+                                    <i class="fa-brands fa-facebook" style="color: #00bcd4;"></i>
+                                    <i class="fa-brands fa-twitter" style="color: #00bcd4;"></i>
+                                    <i class="fa-brands fa-instagram" style="color: #00bcd4;"></i>
+                                </div>
+                            </div>
+                        </div><!-- Member 4 -->
+                        <div class="flex flex-col w-full items-center gap-3">
+                            <img src="./Images/member3.png" alt="" class="w-3/4" />
+                            <div class="items-center text-center space-y-2">
+                                <h2 class="text-xl font-bold ">Robin Khan</h2>
+                                <p>Fruit Expert</p>
+                                <div class="review space-x-2">
+                                    <i class="fa-brands fa-facebook" style="color: #00bcd4;"></i>
+                                    <i class="fa-brands fa-twitter" style="color: #00bcd4;"></i>
+                                    <i class="fa-brands fa-instagram" style="color: #00bcd4;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
 
 
 
+        <!-- Why choose Us section -->
+        <section>
+            <div class="hero min-h-[450px] my-24 ">
+                <div class="hero-content  flex-col w-full p-0">
+                    <div class="max-w-xl text-center">
+                        <h1 class="text-5xl font-bold">Why Choose Us</h1>
+                        <p class="py-6">When you choose Fruitylicious Harvests, you're not just indulging in the finest
+                            fruits; you're also supporting a team that values ethical farming, environmental
+                            consciousness, and the joy of providing nourishing delights to your table.</p>
+                    </div>
+                    <div class="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 ">
+                        <div class="xl:order-2 col-span-1 md:col-span-2 xl:col-span-1 w-full">
+                            <img src="./Images/whychoose1.png" alt="" class="w-full">
+                        </div>
+
+
+                        <div class="flex flex-col justify-between w-3/4 mx-auto md:w-full gap-y-10 md:gap-y-4">
+                            <div class="hero-content md:items-start p-0 flex-col text-center md:text-left md:flex-row">
+                                <i class="fa-solid fa-people-group p-4 rounded-full bg-gray-200 mt-2"></i>
+                                <div class="flex flex-col items-center md:items-start">
+                                    <h2 class="card-title">Dedicated Team</h2>
+                                    <hr class=" w-1/3 h-0.5 my-4 bg-black border-0 rounded md:my-1">
+                                    <p class="text-gray-500">Professional employees are there for you to pick the most
+                                        amazing and fresh fruits.</p>
+                                </div>
+                            </div>
+                            <div class="hero-content md:items-start p-0 flex-col text-center md:text-left md:flex-row">
+                                <i class="fa-solid fa-leaf p-4 rounded-full bg-gray-200 mt-2"></i>
+                                <div class="flex flex-col items-center md:items-start">
+                                    <h2 class="card-title">Fresh is Best</h2>
+                                    <hr class=" w-1/3 h-0.5 my-4 bg-black border-0 rounded md:my-1">
+                                    <p class="text-gray-500">Professional employees are there for you to pick the most
+                                        amazing and fresh fruits.</p>
+                                </div>
+                            </div>
+                            <div class="hero-content md:items-start p-0 flex-col text-center md:text-left md:flex-row">
+                                <i class="fa-solid fa-gift p-4 rounded-full bg-gray-200 mt-2"></i>
+                                <div class="flex flex-col items-center md:items-start">
+                                    <h2 class="card-title">Gift Certificates</h2>
+                                    <hr class=" w-1/3 h-0.5 my-4 bg-black border-0 rounded md:my-1">
+                                    <p class="text-gray-500">Professional employees are there for you to pick the most
+                                        amazing and fresh fruits.</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="flex flex-col justify-between order-3 w-3/4 mx-auto md:w-full gap-y-10 md:gap-y-4 ">
+                            <div
+                                class="hero-content md:items-start p-0 flex-col text-center md:text-right md:flex-row-reverse">
+                                <i class="fa-solid fa-truck-field p-4 rounded-full bg-gray-200 mt-2"></i>
+                                <div class="flex flex-col items-center md:items-end">
+                                    <h2 class="card-title">Integrated Supplier
+                                    </h2>
+                                    <hr class=" w-1/3 h-0.5 my-4 bg-black border-0 rounded md:my-1">
+                                    <p class="text-gray-500">Professional employees are there for you to pick the most
+                                        amazing and fresh fruits.</p>
+                                </div>
+                            </div>
+                            <div
+                                class="hero-content md:items-start p-0 flex-col text-center md:text-right md:flex-row-reverse">
+                                <i class="fa-solid fa-heart p-4 rounded-full bg-gray-200 mt-2"></i>
+                                <div class="flex flex-col items-center md:items-end">
+                                    <h2 class="card-title">Sustainable Practice</h2>
+                                    <hr class=" w-1/3 h-0.5 my-4 bg-black border-0 rounded md:my-1">
+                                    <p class="text-gray-500">Professional employees are there for you to pick the most
+                                        amazing and fresh fruits.</p>
+                                </div>
+                            </div>
+                            <div
+                                class="hero-content md:items-start p-0 flex-col text-center md:text-right md:flex-row-reverse">
+                                <i class="fa-solid fa-thumbs-up p-4 rounded-full bg-gray-200 mt-2"></i>
+                                <div class="flex flex-col items-center md:items-end">
+                                    <h2 class="card-title">The Benefits Only</h2>
+                                    <hr class=" w-1/3 h-0.5 my-4 bg-black border-0 rounded md:my-1">
+                                    <p class="text-gray-500">Professional employees are there for you to pick the most
+                                        amazing and fresh fruits.</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+
+
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
 
 
     </main>
-    <section>
 
-    </section>
+    <footer class="footer footer-center p-10 bg-black text-white text-base-content">
+        <a class="flex items-center gap-3 text-2xl font-semibold" href=""><img class="w-12" src="./Images/logo.png"
+                alt="">
+            <p><span class="text-primary">Fruity</span>Licious</p>
+        </a>
+        <div class="grid grid-cols-4 sm:grid-cols-6  gap-4">
+            <a class="link link-hover">Home</a>
+            <a class="link link-hover">About us</a>
+            <a class="link link-hover">Shop</a>
+            <a class="link link-hover">Support</a>
+            <a class="link link-hover col-span-2  sm:col-span-1">My Account</a>
+            <a class="link link-hover col-span-2 sm:col-span-1">Privacy Policy</a>
+        </div>
+        <div>
+            <div class="grid grid-flow-col gap-4 text-2xl">
+                <i class="fa-brands fa-facebook" style="color: #00bcd4;"></i>
+                <i class="fa-brands fa-twitter" style="color: #00bcd4;"></i>
+                <i class="fa-brands fa-instagram" style="color: #00bcd4;"></i>
+                <i class="fa-brands fa-youtube" style="color: #00bcd4;"></i>
+                <i class="fa-brands fa-pinterest" style="color: #00bcd4;"></i>
+            </div>
+        </div>
+
+    </footer>
 
 </body>
 
