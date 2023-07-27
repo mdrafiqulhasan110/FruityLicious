@@ -27,6 +27,10 @@
         tailwind.config = {
             theme: {
                 extend: {
+                    colors: {
+                        'primary': '#00BCD4',
+                        'primary-description': '#121212',
+                    }
 
                 }
             }
@@ -44,7 +48,7 @@
     <header>
         <!-- This is navbar section -->
         <section>
-            <div class="navbar justify-between md:bg-[#00BCD4] md:my-10 rounded-full md:text-white md:px-10 py-5">
+            <div class="navbar justify-between md:bg-primary md:my-10 rounded-full md:text-white md:px-10 py-5">
                 <div class="navbar-start hidden xl:block ">
                     <ul class="flex gap-4">
                         <li><a href="">Home</a></li>
@@ -64,7 +68,7 @@
                         <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
 
                     </div>
-                    
+
 
                     <div class="drawer drawer-end flex justify-end xl:hidden">
                         <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
@@ -82,10 +86,11 @@
                                 <li><a href="">About Us</a></li>
                                 <li><a href="">Shop</a></li>
                                 <li><a href="">All Fruits</a></li>
-                                <div class="flex lg:hidden items-center py-3 px-6 rounded-full bg-white text-black min-w-[300px]">
+                                <div
+                                    class="flex lg:hidden items-center py-3 px-6 rounded-full bg-white text-black min-w-[300px]">
                                     <input type="text" placeholder="Search here" class="w-full outline-none" />
                                     <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
-            
+
                                 </div>
                             </ul>
                         </div>
@@ -109,7 +114,7 @@
                             <div class="max-w-lg">
                                 <h1 class="mb-5 text-5xl font-bold ">Fruitylicious Harvests</h1>
                                 <p class="mb-5">Taste the Colors of Nature! lorem*20</p>
-                                <button class="btn btn-primary">Shop Now</button>
+                                <button class="btn btn-primary bg-primary border-0 hover:bg-red-400">Shop Now</button>
                             </div>
                         </div>
                     </div>
@@ -125,7 +130,7 @@
                             <div class="max-w-lg">
                                 <h1 class="mb-5 text-5xl font-bold ">Fruitylicious Harvests</h1>
                                 <p class="mb-5">Taste the Colors of Nature! lorem*20</p>
-                                <button class="btn btn-primary">Shop Now</button>
+                                <button class="btn btn-primary bg-primary border-0 hover:bg-red-400">Shop Now</button>
                             </div>
                         </div>
                     </div>
@@ -141,7 +146,7 @@
                             <div class="max-w-lg">
                                 <h1 class="mb-5 text-5xl font-bold ">Fruitylicious Harvests</h1>
                                 <p class="mb-5">Taste the Colors of Nature! lorem*20</p>
-                                <button class="btn btn-primary">Shop Now</button>
+                                <button class="btn btn-primary bg-primary border-0 hover:bg-red-400">Shop Now</button>
                             </div>
                         </div>
                     </div>
@@ -157,7 +162,7 @@
                             <div class="max-w-lg">
                                 <h1 class="mb-5 text-5xl font-bold ">Fruitylicious Harvests</h1>
                                 <p class="mb-5">Taste the Colors of Nature! lorem*20</p>
-                                <button class="btn btn-primary">Shop Now</button>
+                                <button class="btn btn-primary bg-primary border-0 hover:bg-red-400">Shop Now</button>
                             </div>
                         </div>
                     </div>
@@ -167,30 +172,171 @@
                     </div>
                 </div>
             </div>
-            <div class=" w-full hidden md:block lg:absolute md:mt-8 lg:-mt-24">
-            <div class="banner-fruits w-full lg:w-3/4 mx-auto p-10 flex justify-between text-center bg-white rounded-lg shadow-md">
-                <div class="item flex flex-col items-center">
-                    <img class="w-3/4" src="./Images/fruit1.png" alt=""></img>
-                    <p>Grape</p>
+            <div class=" w-full hidden md:block lg:relative md:mt-8 lg:-mt-24">
+                <div
+                    class="banner-fruits w-full lg:w-3/4 mx-auto p-10 flex justify-between text-center bg-white rounded-lg shadow-md">
+                    <div class="item flex flex-col items-center">
+                        <img class="w-3/4" src="./Images/fruit1.png" alt=""></img>
+                        <p>Grape</p>
+                    </div>
+                    <div class="item flex flex-col items-center">
+                        <img class="w-3/4" src="./Images/fruit2.png" alt="">
+                        <p>Orange</p>
+                    </div>
+                    <div class="item flex flex-col items-center">
+                        <img class="w-3/4" src="./Images/fruit3.png" alt="">
+                        <p>Mango</p>
+                    </div>
+                    <div class="item flex flex-col items-center">
+                        <img class="w-3/4" src="./Images/fruit4.png" alt="">
+                        <p>Strawberry</p>
+                    </div>
+                    <div class="item flex flex-col items-center">
+                        <img class="w-3/4" src="./Images/fruit5.png" alt="">
+                        <p>Pomegranate</p>
+                    </div>
                 </div>
-                <div class="item flex flex-col items-center">
-                    <img class="w-3/4" src="./Images/fruit2.png" alt="">
-                    <p>Orange</p>
-                </div>
-                <div class="item flex flex-col items-center">
-                    <img class="w-3/4" src="./Images/fruit3.png" alt="">
-                    <p>Mango</p>
-                </div>
-                <div class="item flex flex-col items-center">
-                    <img class="w-3/4" src="./Images/fruit4.png" alt="">
-                    <p>Strawberry</p>
-                </div>
-                <div class="item flex flex-col items-center">
-                    <img class="w-3/4" src="./Images/fruit5.png" alt="">
-                    <p>Pomegranate</p>
-                </div>
-            </div></div>
+            </div>
         </section>
+
+
+        <!-- Deal of the day section -->
+
+        <section class="offer flex flex-col items-center my-16 gap-16">
+
+            <!-- countdown section -->
+            <div class="time w-full flex justify-between flex-col items-center lg:flex-row gap-10 ">
+                <div class="space-y-4 text-center lg:text-start">
+                    <h2 class="font-bold text-3xl">Deal of the day</h2>
+                    <p>Get the popular item at a discount price for a limited period</p>
+                </div>
+
+                <div class="grid grid-flow-col gap-5 text-center auto-cols-max place-content-center">
+                    <div class="flex flex-col">
+                        <span class="countdown font-mono text-5xl">
+                            <span style="--value:15;"></span>
+                        </span>
+                        days
+                    </div><i class="fa-solid fa-ellipsis-vertical mt-4"></i>
+                    <div class="flex flex-col">
+                        <span class="countdown font-mono text-5xl">
+                            <span style="--value:10;"></span>
+                        </span>
+                        hours
+                    </div> <i class="fa-solid fa-ellipsis-vertical mt-4"></i>
+                    <div class="flex flex-col">
+                        <span class="countdown font-mono text-5xl">
+                            <span style="--value:24;"></span>
+                        </span>
+                        min
+                    </div> <i class="fa-solid fa-ellipsis-vertical mt-4"></i>
+                    <div class="flex flex-col">
+                        <span class="countdown font-mono text-5xl">
+                            <span style="--value:38;"></span>
+                        </span>
+                        sec
+                    </div>
+                </div>
+            </div>
+
+            <!-- card section -->
+            <div class="w-full grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-10">
+                <!-- card 1 -->
+                <div class="card bg-base-100 rounded-lg border border-[rgba(18, 18, 18, 0.10)]">
+                    <figure class="px-10 pt-10">
+                        <img src="./Images/fruit6.png" alt="" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">12.90$ - 18.85$</h2>
+                        <hr class=" w-full h-px mx-auto my-4 bg-gray-100 border-0 rounded md:my-1">
+                        <p class="text-gray-500">Apple</p>
+                        <div class="review">
+                            <i class="fa-solid fa-star" style="color: #00bcd4;"></i>
+                            <i class="fa-solid fa-star" style="color: #00bcd4;"></i>
+                            <i class="fa-solid fa-star" style="color: #00bcd4;"></i>
+                            <i class="fa-solid fa-star-half-stroke" style="color: #00bcd4;"></i>
+                            <i class="fa-regular fa-star" style="color: #00bcd4;"></i>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-ghost text-primary normal-case"
+                                onclick="modal1.showModal()">Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card bg-base-100 rounded-lg border border-[rgba(18, 18, 18, 0.10)]">
+                    <figure class="px-10 pt-10">
+                        <img src="./Images/fruit7.png" alt="" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">12.90$ - 18.85$</h2>
+                        <hr class=" w-full h-px mx-auto my-4 bg-gray-100 border-0 rounded md:my-1">
+                        <p class="text-gray-500">Orange</p>
+                        <div class="review">
+                            <i class="fa-solid fa-star" style="color: #00bcd4;"></i>
+                            <i class="fa-solid fa-star" style="color: #00bcd4;"></i>
+                            <i class="fa-solid fa-star" style="color: #00bcd4;"></i>
+                            <i class="fa-solid fa-star-half-stroke" style="color: #00bcd4;"></i>
+                            <i class="fa-regular fa-star" style="color: #00bcd4;"></i>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-ghost text-primary normal-case"
+                                onclick="modal2.showModal()">Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card bg-base-100 rounded-lg border border-[rgba(18, 18, 18, 0.10)]">
+                    <figure class="px-10 pt-10">
+                        <img src="./Images/fruit8.png" alt="" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">12.90$ - 18.85$</h2>
+                        <hr class=" w-full h-px mx-auto my-4 bg-gray-100 border-0 rounded md:my-1">
+                        <p class="text-gray-500">Red Dragon</p>
+                        <div class="review">
+                            <i class="fa-solid fa-star" style="color: #00bcd4;"></i>
+                            <i class="fa-solid fa-star" style="color: #00bcd4;"></i>
+                            <i class="fa-solid fa-star" style="color: #00bcd4;"></i>
+                            <i class="fa-solid fa-star-half-stroke" style="color: #00bcd4;"></i>
+                            <i class="fa-regular fa-star" style="color: #00bcd4;"></i>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-ghost text-primary normal-case"
+                                onclick="modal3.showModal()">Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card bg-base-100 rounded-lg border border-[rgba(18, 18, 18, 0.10)]">
+                    <figure class="px-10 pt-10">
+                        <img src="./Images/fruit9.png" alt="" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">12.90$ - 18.85$</h2>
+                        <hr class=" w-full h-px mx-auto my-4 bg-gray-100 border-0 rounded md:my-1">
+                        <p class="text-gray-500">Banana</p>
+                        <div class="review">
+                            <i class="fa-solid fa-star" style="color: #00bcd4;"></i>
+                            <i class="fa-solid fa-star" style="color: #00bcd4;"></i>
+                            <i class="fa-solid fa-star" style="color: #00bcd4;"></i>
+                            <i class="fa-solid fa-star-half-stroke" style="color: #00bcd4;"></i>
+                            <i class="fa-regular fa-star" style="color: #00bcd4;"></i>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-ghost text-primary normal-case"
+                                onclick="modal4.showModal()">Details</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <button class="btn btn-primary w-max bg-primary border-0 hover:bg-red-400">Shop Now</button>
+
+        </section>
+
+
+
+
+
+
     </main>
     <section>
 
